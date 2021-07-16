@@ -5,7 +5,9 @@ const NavBar = () => {
     return (
         <NavigationContainer>
             <div>
-                <p>Hello Again, time to get to work</p>
+                <p style={{ color: "white" }}>
+                    Hello again. Time to get to work...
+                </p>
             </div>
         </NavigationContainer>
     );
