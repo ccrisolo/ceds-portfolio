@@ -1,11 +1,8 @@
 import React from "react";
+import NavBar from "../components/NavBar/NavBar";
 
 const HomePage = props => {
-    return (
-        <div>
-            <p>Hello Again</p>
-        </div>
-    );
+    return <NavBar />;
 };
 
 export default HomePage;
