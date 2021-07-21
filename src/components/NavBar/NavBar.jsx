@@ -1,15 +1,26 @@
 import React from "react";
-import { NavigationContainer } from "./style";
+import {
+    NavigationContainer,
+    NavLink,
+    Bars,
+    NavMenu,
+    NavBtn,
+    NavBtnLink,
+    Logo
+} from "./NavBarElements";
 
 const NavBar = () => {
     return (
-        <NavigationContainer>
-            <div>
-                <p style={{ color: "white" }}>
-                    Hello again. Time to get to work...
-                </p>
-            </div>
-        </NavigationContainer>
+        <>
+            <NavigationContainer>
+                <Logo>Cedric's Portfolio</Logo>
+                <div>
+                    <p style={{ color: "white" }}>
+                        Hello again. Time to get to work...
+                    </p>
+                </div>
+            </NavigationContainer>
+        </>
     );
 };
 
