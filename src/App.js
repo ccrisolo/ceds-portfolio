@@ -13,7 +13,6 @@ function App() {
                 height: "100vh",
                 width: "100vw",
                 opacity: "95%",
-                zIndex: "-1",
             }}
         >
             <HomePage />

@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     NavigationContainer,
-    NavLink,
-    Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink,
+    Logo,
+    Menu,
     Item,
     Link,
-    Menu,
-    Logo,
+    NavIcon,
+    Line,
+    Overlay,
+    OverlayMenu,
 } from "./NavBarElements";
 
 const NavBar = () => {
+    const [toggleNav, setToggleNav] = useState(false);
+
     return (
         <>
             <NavigationContainer>
@@ -32,7 +33,29 @@ const NavBar = () => {
                         </Link>
                     </Item>
                 </Menu>
+                <NavIcon onClick={() => setToggleNav(!toggleNav)}>
+                    <Line open={toggleNav} />
+                    <Line open={toggleNav} />
+                    <Line open={toggleNav} />
+                </NavIcon>
             </NavigationContainer>
+            <Overlay open={toggleNav}>
+                <OverlayMenu open={toggleNav}>
+                    <Item>
+                        <Link
+                            target='#'
+                            href='https://www.linkedin.com/in/cedric-crisolo/'
+                        >
+                            LinkedIn
+                        </Link>
+                    </Item>
+                    <Item>
+                        <Link target='#' href='https://github.com/ccrisolo'>
+                            Github
+                        </Link>
+                    </Item>
+                </OverlayMenu>
+            </Overlay>
         </>
     );
 };
