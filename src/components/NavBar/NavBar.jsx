@@ -6,7 +6,10 @@ import {
     NavMenu,
     NavBtn,
     NavBtnLink,
-    Logo
+    Item,
+    Link,
+    Menu,
+    Logo,
 } from "./NavBarElements";
 
 const NavBar = () => {
@@ -14,11 +17,21 @@ const NavBar = () => {
         <>
             <NavigationContainer>
                 <Logo>Cedric's Portfolio</Logo>
-                <div>
-                    <p style={{ color: "white" }}>
-                        Hello again. Time to get to work...
-                    </p>
-                </div>
+                <Menu>
+                    <Item>
+                        <Link
+                            target='#'
+                            href='https://www.linkedin.com/in/cedric-crisolo/'
+                        >
+                            LinkedIn
+                        </Link>
+                    </Item>
+                    <Item>
+                        <Link target='#' href='https://github.com/ccrisolo'>
+                            Github
+                        </Link>
+                    </Item>
+                </Menu>
             </NavigationContainer>
         </>
     );

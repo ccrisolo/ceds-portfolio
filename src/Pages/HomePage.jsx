@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../components/NavBar/NavBar";
 
-
 const HomePage = props => {
     const [toggleNav, setToggleNav] = useState(false);
 
