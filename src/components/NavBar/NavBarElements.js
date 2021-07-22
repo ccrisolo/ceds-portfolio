@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const NavigationContainer = styled.nav`
     padding: 0 20px;
     min-height: 9vh;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(3px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,8 +68,8 @@ export const Overlay = styled.div`
     position: absolute;
     height: ${props => (props.open ? "91vh" : 0)};
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(3px);
     transition: height 0.4s ease-in-out;
 
     @media (min-width: 1200px) {

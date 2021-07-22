@@ -16,8 +16,15 @@ const NavBar = () => {
 
     return (
         <>
-            <NavigationContainer>
-                <Logo>Cedric's Portfolio</Logo>
+            <NavigationContainer open={toggleNav}>
+                <div style={{ paddingTop: "5px" }}>
+                    <img
+                        src='https://i.imgur.com/wXYrKDm.png'
+                        alt='Developer Logo'
+                        height='75px'
+                        width='75px'
+                    />
+                </div>
                 <Menu>
                     <Item>
                         <Link
