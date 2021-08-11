@@ -1,7 +1,21 @@
 import "./App.css";
 import HomePage from "./Pages/HomePage";
+import Cursor from "./components/Cursor/Cursor";
 
 function App() {
+
+
+    
+    const onMouseMove = (e => {
+        const cursor = document.querySelector('.cursor')
+        cursor.style.left = `${e.pageX}px`
+        cursor.style.top = `${e.pageY}px`
+        
+        
+    });
+    
+    window.addEventListener("mousemove", onMouseMove)
+
     return (
         <div
             className='App'
@@ -15,6 +29,7 @@ function App() {
                 opacity: "95%",
             }}
         >
+            <Cursor />
             <HomePage />
             {/* need Resume, About, Experience, Projects, Contact pages/sections */}
         </div>
