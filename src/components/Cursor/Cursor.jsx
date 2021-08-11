@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cursor.css";
 
-const Cursor = (top, left) => {
+const Cursor = () => {
     return <div className='cursor'></div>;
 };
 

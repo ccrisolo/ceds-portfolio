@@ -3,18 +3,37 @@ import HomePage from "./Pages/HomePage";
 import Cursor from "./components/Cursor/Cursor";
 
 function App() {
+    const onMouseMove = e => {
+        const cursor = document.querySelector(".cursor");
+        cursor.style.left = `${e.pageX}px`;
+        cursor.style.top = `${e.pageY}px`;
+    };
 
+    const onMouseDown = e => {
+        const cursor = document.querySelector(".cursor");
+        cursor.style.border = "2px solid black";
+        cursor.style.background = "black";
+    };
 
-    
-    const onMouseMove = (e => {
-        const cursor = document.querySelector('.cursor')
-        cursor.style.left = `${e.pageX}px`
-        cursor.style.top = `${e.pageY}px`
-        
-        
-    });
-    
-    window.addEventListener("mousemove", onMouseMove)
+    const onMouseUp = e => {
+        const cursor = document.querySelector(".cursor");
+        cursor.style.border = "";
+        cursor.style.background = "";
+    };
+    const onMouseLeave = e => {
+        const cursor = document.querySelector(".cursor");
+        cursor.style.display = "none";
+    };
+    const onMouseEnter = e => {
+        const cursor = document.querySelector(".cursor");
+        cursor.style.display = "";
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mousedown", onMouseDown);
+    window.addEventListener("mouseup", onMouseUp);
+    window.addEventListener("mouseleave", onMouseLeave);
+    window.addEventListener("mouseenter", onMouseEnter);
 
     return (
         <div
