@@ -11,8 +11,8 @@ function App() {
 
     const onMouseDown = e => {
         const cursor = document.querySelector(".cursor");
-        cursor.style.border = "2px solid black";
-        cursor.style.background = "black";
+        cursor.style.border = "2px solid grey";
+        cursor.style.background = "grey";
     };
 
     const onMouseUp = e => {
@@ -43,6 +43,7 @@ function App() {
                 backgroundRepeat: "repeat-y",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                backgroundColor:'black',
                 height: "100vh",
                 width: "100vw",
                 opacity: "95%",
