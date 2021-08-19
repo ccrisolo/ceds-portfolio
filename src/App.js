@@ -1,6 +1,9 @@
 import "./App.css";
-import HomePage from "./Pages/HomePage";
 import Cursor from "./components/Cursor/Cursor";
+import Parallax from "react-rellax";
+import LottieAnimation from "./components/Lottie/LottieAnimation";
+import HomeOffice from "./animations/HomeOffice.json";
+import Desk from "./animations/Desk.json";
 
 function App() {
     const onMouseMove = e => {
@@ -36,23 +39,44 @@ function App() {
     window.addEventListener("mouseenter", onMouseEnter);
 
     return (
-        <div
-            className='App'
-            style={{
-                backgroundImage: `url("https://i.imgur.com/2P72dCc.jpg")`,
-                backgroundRepeat: "repeat-y",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundColor:'black',
-                height: "100vh",
-                width: "100vw",
-                opacity: "95%",
-            }}
-        >
-            <Cursor />
-            <HomePage />
-            {/* need Resume, About, Experience, Projects, Contact pages/sections */}
-        </div>
+        <>
+            <div className='App'>
+                <div className='left-side'>
+                    <h1>Cedric's Portfolio</h1>
+                    <Parallax speed={-8}>
+                        <p>This is my website</p>
+                    </Parallax>
+                    <Parallax speed={-6}>
+                        <p>Hopefully it will look great once I'm done</p>
+                    </Parallax>
+                    <Parallax speed={-4}>
+                        <p>Let's keep this moving forward</p>
+                    </Parallax>
+                </div>
+                <Cursor />
+                <div className='right-side'>
+                    <Parallax speed={-10}>
+                        <LottieAnimation
+                            lotti={Desk}
+                            height={750}
+                            width={750}
+                        />
+                    </Parallax>
+                </div>
+            </div>
+            <div className='projects-section'>
+                <h2>This will be the projects section</h2>
+                <Parallax speed={-2}>
+                    <div className='right-side'>
+                        <LottieAnimation
+                            lotti={HomeOffice}
+                            height={500}
+                            width={500}
+                        />
+                    </div>
+                </Parallax>
+            </div>
+        </>
     );
 }
 
