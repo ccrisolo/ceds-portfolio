@@ -4,6 +4,8 @@ import Parallax from "react-rellax";
 import LottieAnimation from "./components/Lottie/LottieAnimation";
 import HomeOffice from "./animations/HomeOffice.json";
 import Desk from "./animations/Desk.json";
+import developer from './animations/developer.json'
+import laptop_coffee from './animations/laptop_coffee.json'
 
 function App() {
     const onMouseMove = e => {
@@ -57,7 +59,7 @@ function App() {
                 <div className='right-side'>
                     <Parallax speed={-10}>
                         <LottieAnimation
-                            lotti={Desk}
+                            lotti={laptop_coffee}
                             height={750}
                             width={750}
                         />
@@ -69,7 +71,7 @@ function App() {
                 <Parallax speed={-2}>
                     <div className='right-side'>
                         <LottieAnimation
-                            lotti={HomeOffice}
+                            lotti={developer}
                             height={500}
                             width={500}
                         />
