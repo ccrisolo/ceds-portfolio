@@ -8,15 +8,20 @@
 }
 
 .left-side {
-    width: 40%;
+    width: 60%;
 }
 
 .right-side {
-    width: 60%;
+    width: 55%;
 }
 
 .projects-section {
     background-color: grey;
+    min-height: 100vh;
+    margin: auto;
+}
+.education-section {
+    background-color: lightgray;
     min-height: 100vh;
     margin: auto;
 }

@@ -5,7 +5,8 @@ import LottieAnimation from "./components/Lottie/LottieAnimation";
 import HomeOffice from "./animations/HomeOffice.json";
 import Desk from "./animations/Desk.json";
 import developer from './animations/developer.json'
-import laptop_coffee from './animations/laptop_coffee.json'
+import Portfolio from './animations/Portfolio.json'
+import Task from './animations/Task.json'
 
 function App() {
     const onMouseMove = e => {
@@ -45,21 +46,18 @@ function App() {
             <div className='App'>
                 <div className='left-side'>
                     <h1>Cedric's Portfolio</h1>
-                    <Parallax speed={-8}>
-                        <p>This is my website</p>
-                    </Parallax>
-                    <Parallax speed={-6}>
-                        <p>Hopefully it will look great once I'm done</p>
-                    </Parallax>
-                    <Parallax speed={-4}>
+                        <p>Hi there! I'm Cedric.</p>
+                        <p>I'm a passionate Frontend Web and Mobile App Developer
+                            with experience utilizing JavaScript, React, React Native, Redux 
+                            in addition to other modern libraries and frameworks.  
+                        </p>
                         <p>Let's keep this moving forward</p>
-                    </Parallax>
                 </div>
                 <Cursor />
                 <div className='right-side'>
-                    <Parallax speed={-10}>
+                    <Parallax speed={-5}>
                         <LottieAnimation
-                            lotti={laptop_coffee}
+                            lotti={developer}
                             height={750}
                             width={750}
                         />
@@ -68,10 +66,22 @@ function App() {
             </div>
             <div className='projects-section'>
                 <h2>This will be the projects section</h2>
-                <Parallax speed={-2}>
+                <Parallax speed={-5}>
                     <div className='right-side'>
                         <LottieAnimation
-                            lotti={developer}
+                            lotti={Portfolio}
+                            height={500}
+                            width={500}
+                        />
+                    </div>
+                </Parallax>
+            </div>
+            <div className='education-section'>
+                <h2>This will be the education section</h2>
+                <Parallax speed={-5}>
+                    <div className='right-side'>
+                        <LottieAnimation
+                            lotti={Desk}
                             height={500}
                             width={500}
                         />
