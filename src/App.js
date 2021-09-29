@@ -7,6 +7,7 @@ import Desk from "./animations/Desk.json";
 import developer from './animations/developer.json'
 import Portfolio from './animations/Portfolio.json'
 import Task from './animations/Task.json'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
     const onMouseMove = e => {
@@ -44,6 +45,7 @@ function App() {
     return (
         <>
             <div className='App'>
+                <NavBar />
                 <div className='left-side'>
                     <h1>Cedric's Portfolio</h1>
                         <p>Hi there! I'm Cedric.</p>

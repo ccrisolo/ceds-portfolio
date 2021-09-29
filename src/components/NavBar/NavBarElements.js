@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavigationContainer = styled.nav`
     padding: 0 20px;
     min-height: 9vh;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: blue;
     backdrop-filter: blur(3px);
     display: flex;
     justify-content: space-between;
