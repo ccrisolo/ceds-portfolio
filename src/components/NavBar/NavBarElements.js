@@ -76,6 +76,7 @@ export const Overlay = styled.div`
     background-color: rgba(55, 55, 55, 0.1);
     backdrop-filter: blur(3px);
     transition: height 0.4s ease-in-out;
+    z-index: 4;
 
     @media (min-width: 1200px) {
         display: none;
