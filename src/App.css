@@ -1,36 +1,25 @@
-/* .App {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    width: 90%;
-    cursor: none;
-    margin: auto;
-} */
 .App {
-    display: grid;
-  
 }
 
-.left-side {
-    width: 60%;
+.nav-bar {
+    display: flex;
 }
 
-.right-side {
-    width: 55%;
+.intro {
+    margin: 5%;
 }
 
 .projects-section {
     background-color: grey;
-    min-height: 100vh;
-    margin: auto;
+    /* min-height: 100%; */
 }
 .education-section {
     background-color: lightgray;
-    min-height: 100vh;
-    margin: auto;
+    /* min-height: 100%; */
 }
 
 h2 {
-    font-size: 48px;
+    margin-left: 5%;
     color: white;
+    font-size: 48px;
 }
