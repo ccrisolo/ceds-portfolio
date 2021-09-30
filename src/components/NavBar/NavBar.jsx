@@ -17,14 +17,6 @@ const NavBar = () => {
     return (
         <>
             <NavigationContainer open={toggleNav}>
-                <div style={{ paddingTop: "5px" }}>
-                    <img
-                        src='https://i.imgur.com/wXYrKDm.png'
-                        alt='Developer Logo'
-                        height='75px'
-                        width='75px'
-                    />
-                </div>
                 <Menu>
                     <Item>
                         <Link
@@ -46,8 +38,8 @@ const NavBar = () => {
                     <Line open={toggleNav} />
                 </NavIcon>
             </NavigationContainer>
-            <Overlay open={toggleNav}>
-                <OverlayMenu open={toggleNav}>
+            <Overlay open={toggleNav} onClick={() => setToggleNav(!toggleNav)}>
+                <OverlayMenu open={toggleNav} >
                     <Item>
                         <Link
                             target='#'

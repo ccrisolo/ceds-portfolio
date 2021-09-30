@@ -4,89 +4,54 @@ import Parallax from "react-rellax";
 import LottieAnimation from "./components/Lottie/LottieAnimation";
 import HomeOffice from "./animations/HomeOffice.json";
 import Desk from "./animations/Desk.json";
-import developer from './animations/developer.json'
-import Portfolio from './animations/Portfolio.json'
-import Task from './animations/Task.json'
+import developer from "./animations/developer.json";
+import Portfolio from "./animations/Portfolio.json";
+import Task from "./animations/Task.json";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
-    const onMouseMove = e => {
-        const cursor = document.querySelector(".cursor");
-        cursor.style.left = `${e.pageX}px`;
-        cursor.style.top = `${e.pageY}px`;
-    };
-
-    const onMouseDown = e => {
-        const cursor = document.querySelector(".cursor");
-        cursor.style.border = "2px solid grey";
-        cursor.style.background = "grey";
-    };
-
-    const onMouseUp = e => {
-        const cursor = document.querySelector(".cursor");
-        cursor.style.border = "";
-        cursor.style.background = "";
-    };
-    const onMouseLeave = e => {
-        const cursor = document.querySelector(".cursor");
-        cursor.style.display = "none";
-    };
-    const onMouseEnter = e => {
-        const cursor = document.querySelector(".cursor");
-        cursor.style.display = "";
-    };
-
-    window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("mousedown", onMouseDown);
-    window.addEventListener("mouseup", onMouseUp);
-    window.addEventListener("mouseleave", onMouseLeave);
-    window.addEventListener("mouseenter", onMouseEnter);
-
     return (
         <>
             <div className='App'>
-                <div className='left-side'>
-                    <h1>Cedric's Portfolio</h1>
-                        <p>Hi there! I'm Cedric.</p>
-                        <p>I'm a passionate Frontend Web and Mobile App Developer
-                            with experience utilizing JavaScript, React, React Native, Redux 
-                            in addition to other modern libraries and frameworks.  
-                        </p>
-                        <p>Let's keep this moving forward</p>
+                <div className='nav-bar'>
+                    <NavBar />
                 </div>
-                <Cursor />
-                <div className='right-side'>
-                    <Parallax speed={-5}>
+                <div className='intro'>
+                    <h1>Hi there! I'm Cedric.</h1>
+                    <p>
+                        I'm a passionate Frontend Web and Mobile Developer
+                        with experience utilizing JavaScript, React, React
+                        Native, Redux in addition to other modern libraries and
+                        frameworks.
+                    </p>
+                    <div className='illustration-1'>
                         <LottieAnimation
                             lotti={developer}
-                            height={750}
-                            width={750}
+                            width={"100%"}
+                            height={"100%"}
                         />
-                    </Parallax>
+                    </div>
                 </div>
-            </div>
-            <div className='projects-section'>
-                <h2>This will be the projects section</h2>
-                <Parallax speed={-5}>
-                    <div className='right-side'>
+                <div className='projects-section'>
+                    <h2>This will be the projects section</h2>
+                    <div className='illustration-2'>
                         <LottieAnimation
                             lotti={Portfolio}
-                            height={500}
-                            width={500}
+                            width={"100%"}
+                            height={"100%"}
                         />
                     </div>
-                </Parallax>
-            </div>
-            <div className='education-section'>
-                <h2>This will be the education section</h2>
-                <Parallax speed={-5}>
-                    <div className='right-side'>
+                </div>
+                <div className='education-section'>
+                    <h2>This will be the education section</h2>
+                    <div className='illustration-3'>
                         <LottieAnimation
                             lotti={Desk}
-                            height={500}
-                            width={500}
+                            width={"100%"}
+                            height={"100%"}
                         />
                     </div>
-                </Parallax>
+                </div>
             </div>
         </>
     );

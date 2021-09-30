@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
-export const NavigationContainer = styled.nav`
+export const NavigationContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding: 0 20px;
     min-height: 9vh;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(55, 55, 55, 0.1);
     backdrop-filter: blur(3px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-grow: 1;
 `;
 
 export const Logo = styled.h1`
     font-size: 25px;
-    color: white;
+    color: black;
 `;
 
 export const Menu = styled.ul`
@@ -31,7 +32,7 @@ export const Menu = styled.ul`
 export const Item = styled.li``;
 
 export const Link = styled.a`
-    color: white;
+    color: black;
     text-decoration: none;
 
     :hover {
@@ -45,6 +46,10 @@ export const NavIcon = styled.button`
     border: none;
     outline: none;
 
+    :hover {
+
+    }
+
     @media (min-width: 1200px) {
         display: none;
     }
@@ -56,7 +61,7 @@ export const Line = styled.span`
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: #fff;
+    background-color: black;
     transition: width 0.4s ease-in-out;
 
     :nth-child(2) {
@@ -66,11 +71,12 @@ export const Line = styled.span`
 
 export const Overlay = styled.div`
     position: absolute;
-    height: ${props => (props.open ? "91vh" : 0)};
+    height: ${props => (props.open ? "100vh" : 0)};
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(55, 55, 55, 0.1);
     backdrop-filter: blur(3px);
     transition: height 0.4s ease-in-out;
+    z-index: 4;
 
     @media (min-width: 1200px) {
         display: none;
@@ -78,16 +84,17 @@ export const Overlay = styled.div`
 `;
 
 export const OverlayMenu = styled.ul`
+    display: flex;
+    flex-direction: column;
     list-style: none;
     position: absolute;
-    left: 50%;
+    left: 42.5%;
     top: 45%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
 
     li {
         opacity: ${props => (props.open ? 1 : 0)};
         font-size: 25px;
-        margin: 50px 0px;
         transition: opacity 0.4s ease-in-out;
     }
 
