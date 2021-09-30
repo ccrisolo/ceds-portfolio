@@ -16,7 +16,7 @@ function App() {
                 <div className='nav-bar'>
                     <NavBar />
                 </div>
-                <div className='intro'>
+                <div className='intro-section'>
                     <h1>Hi there! I'm Cedric.</h1>
                     <p>
                         I'm a passionate Frontend Web and Mobile Developer
