@@ -19,25 +19,37 @@ function App() {
                 <div className='intro'>
                     <h1>Hi there! I'm Cedric.</h1>
                     <p>
-                        I'm a passionate Frontend Web and Mobile App Developer
+                        I'm a passionate Frontend Web and Mobile Developer
                         with experience utilizing JavaScript, React, React
                         Native, Redux in addition to other modern libraries and
                         frameworks.
                     </p>
-                </div>
-                <div className='illustration-1'>
-                    <LottieAnimation lotti={developer} />
+                    <div className='illustration-1'>
+                        <LottieAnimation
+                            lotti={developer}
+                            width={"100%"}
+                            height={"100%"}
+                        />
+                    </div>
                 </div>
                 <div className='projects-section'>
                     <h2>This will be the projects section</h2>
                     <div className='illustration-2'>
-                        <LottieAnimation lotti={Portfolio} />
+                        <LottieAnimation
+                            lotti={Portfolio}
+                            width={"100%"}
+                            height={"100%"}
+                        />
                     </div>
                 </div>
                 <div className='education-section'>
                     <h2>This will be the education section</h2>
                     <div className='illustration-3'>
-                        <LottieAnimation lotti={Desk} />
+                        <LottieAnimation
+                            lotti={Desk}
+                            width={"100%"}
+                            height={"100%"}
+                        />
                     </div>
                 </div>
             </div>

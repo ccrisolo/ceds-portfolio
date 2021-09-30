@@ -84,16 +84,17 @@ export const Overlay = styled.div`
 `;
 
 export const OverlayMenu = styled.ul`
+    display: flex;
+    flex-direction: column;
     list-style: none;
     position: absolute;
-    left: 50%;
+    left: 42.5%;
     top: 45%;
     transform: translate(-40%, -50%);
 
     li {
         opacity: ${props => (props.open ? 1 : 0)};
         font-size: 25px;
-        margin: 50px 0px;
         transition: opacity 0.4s ease-in-out;
     }
 
