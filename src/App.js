@@ -24,7 +24,7 @@ function App() {
                                 options={{
                                     loop: false,
                                     cursor: "",
-                                    delay:50,
+                                    delay: 50,
                                     cursorClassName: "type-cursor",
                                     wrapperClassName: "type-wrapper",
                                 }}
