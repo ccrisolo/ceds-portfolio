@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
     NavigationContainer,
-    Logo,
     Menu,
     Item,
     Link,
@@ -9,6 +8,7 @@ import {
     Line,
     Overlay,
     OverlayMenu,
+    Signature
 } from "./NavBarElements";
 
 const NavBar = () => {
@@ -17,6 +17,7 @@ const NavBar = () => {
     return (
         <>
             <NavigationContainer open={toggleNav}>
+                <Signature>Cedric Crisolo</Signature>
                 <Menu>
                     <Item>
                         <Link

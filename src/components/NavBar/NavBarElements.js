@@ -2,13 +2,20 @@ import styled from "styled-components";
 
 export const NavigationContainer = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    min-height: 9vh;
+    padding: 0 10%;
+    min-height: 30px;
     background-color: rgba(55, 55, 55, 0.1);
     backdrop-filter: blur(3px);
     flex-grow: 1;
+`;
+
+
+export const  Signature = styled.p`
+    font-family: Creattion;
+    font-size: 30px;
+    align-self: flex-start;
 `;
 
 export const Logo = styled.h1`
@@ -88,7 +95,7 @@ export const OverlayMenu = styled.ul`
     flex-direction: column;
     list-style: none;
     position: absolute;
-    left: 42.5%;
+    left: 50%;
     top: 45%;
     transform: translate(-40%, -50%);
 
@@ -100,5 +107,9 @@ export const OverlayMenu = styled.ul`
 
     li:nth-child(2) {
         margin: 50px 0px;
+    }
+
+    @media (min-width:400px) {
+        left: 42.5%;
     }
 `;
