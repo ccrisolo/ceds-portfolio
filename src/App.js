@@ -8,6 +8,7 @@ import developer from "./animations/developer.json";
 import Portfolio from "./animations/Portfolio.json";
 import Task from "./animations/Task.json";
 import NavBar from "./components/NavBar/NavBar";
+import { Signature } from "./components/NavBar/NavBarElements";
 
 function App() {
     return (
@@ -17,13 +18,15 @@ function App() {
                     <NavBar />
                 </div>
                 <div className='intro-section'>
-                    <h1>Hi there! I'm Cedric.</h1>
-                    <p>
-                        I'm a passionate Frontend Web and Mobile Developer
-                        with experience utilizing JavaScript, React, React
-                        Native, Redux in addition to other modern libraries and
-                        frameworks.
-                    </p>
+                    <div className='intro'>
+                        <h1>Hi there! I'm Cedric.</h1>
+                        <p>
+                            I'm a passionate Frontend Web and Mobile Developer
+                            with experience utilizing JavaScript, React, React
+                            Native, Redux in addition to other modern libraries
+                            and frameworks.
+                        </p>
+                    </div>
                     <div className='illustration-1'>
                         <LottieAnimation
                             lotti={developer}

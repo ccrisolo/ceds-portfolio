@@ -1,17 +1,14 @@
-.App {
-}
-
 .nav-bar {
     display: flex;
 }
 
 .intro-section {
-    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     min-height: 90vh;
 }
 
 .illustration-1 {
-    margin-top: 10%;
     animation: fadeIn 3s, slideIn 3s;
     -webkit-animation: fadeIn 3s, slideIn 3s;
     -moz-animation: fadeIn 3s, slideIn 3s;
@@ -21,33 +18,57 @@
 
 /* takes care of different browsers */
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes slideIn {
-    from {margin-left: 100%;}
-    to {margin-left:0;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .projects-section {
     background-color: lightgray;
@@ -66,4 +87,28 @@ h2 {
 p {
     line-height: 1.5em;
     font-size: 20px;
+}
+
+@media (min-width: 900px) {
+    .App {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .nav-bar {
+        grid-column: 1/-1;
+    }
+    .intro-section{
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro {
+        grid-column: 1/2;
+    }
+
+    .projects-section,
+    .education-section {
+        grid-column: 1/-1;
+    }
 }
