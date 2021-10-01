@@ -11,6 +11,9 @@ import NavBar from "./components/NavBar/NavBar";
 import { Signature } from "./components/NavBar/NavBarElements";
 
 function App() {
+
+
+    
     return (
         <>
             <div className='App'>
@@ -19,7 +22,13 @@ function App() {
                 </div>
                 <div className='intro-section'>
                     <div className='intro'>
-                        <h1>Hi there! I'm Cedric.</h1>
+                        <div className='typing-container'>
+                            <span id='sentence'>
+                                <h1>Hi there! I'm Cedric.</h1>
+                            </span>
+                            <span className='input-cursor'></span>
+                        </div>
+                        {/* <h1>Hi there! I'm Cedric.</h1> */}
                         <p>
                             I'm a passionate Frontend Web and Mobile Developer
                             with experience utilizing JavaScript, React, React
