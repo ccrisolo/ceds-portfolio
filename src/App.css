@@ -93,24 +93,15 @@ p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    min-height: 250px;
+    margin-right: 15px;
 }
 
-.input-cursor{
-    display: inline-block;
-    width: 2px;
-    height: 42px;
-    background-color:black;
-    margin-left: 8px;
-    animation: blink .6s linear infinite alternate;
+.type-wrapper{
+    line-height: 2em;
+    
+    font-size: larger;
 }
-
-@keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
 
 @media (min-width: 900px) {
     .App {
@@ -125,6 +116,14 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .typing-container{
+        min-height: 125px;
+        min-width: 700px;
+    }
+    .type-wrapper{
+        line-height: 1.25em;
+        font-size: larger;
+    }
 
     .intro {
         grid-column: 1/2;
@@ -133,5 +132,13 @@ p {
     .projects-section,
     .education-section {
         grid-column: 1/-1;
+    }
+}
+
+
+@media (max-width: 1400px){
+    .intro-section{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

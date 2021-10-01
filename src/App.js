@@ -8,12 +8,9 @@ import developer from "./animations/developer.json";
 import Portfolio from "./animations/Portfolio.json";
 import Task from "./animations/Task.json";
 import NavBar from "./components/NavBar/NavBar";
-import { Signature } from "./components/NavBar/NavBarElements";
+import Typewriter from "typewriter-effect";
 
 function App() {
-
-
-    
     return (
         <>
             <div className='App'>
@@ -23,17 +20,33 @@ function App() {
                 <div className='intro-section'>
                     <div className='intro'>
                         <div className='typing-container'>
-                            <span id='sentence'>
-                                <h1>Hi there! I'm Cedric.</h1>
-                            </span>
-                            <span className='input-cursor'></span>
+                            <Typewriter
+                                options={{
+                                    loop: false,
+                                    cursor: "",
+                                    delay:50,
+                                    cursorClassName: "type-cursor",
+                                    wrapperClassName: "type-wrapper",
+                                }}
+                                onInit={typewriter => {
+                                    typewriter
+                                        .typeString(
+                                            `<h1>Hi there! I'm Cedric.</h1>`
+                                        )
+                                        .pauseFor(1000)
+                                        .typeString(
+                                            `<h1>Let's build something <span style="color: purple;"> GREAT </span> together!</h1>`
+                                        )
+                                        .start();
+                                }}
+                            />
                         </div>
-                        {/* <h1>Hi there! I'm Cedric.</h1> */}
                         <p>
-                            I'm a passionate Frontend Web and Mobile Developer
-                            with experience utilizing JavaScript, React, React
-                            Native, Redux in addition to other modern libraries
-                            and frameworks.
+                            I'm a passionate Frontend Developer with experience
+                            in both Web and Mobile. My favorite technologies to
+                            use are JavaScript, React, React Native and Redux. I
+                            enjoy learning and thrive with people who are
+                            excited to build and learn from one another.
                         </p>
                     </div>
                     <div className='illustration-1'>
