@@ -108,4 +108,8 @@ export const OverlayMenu = styled.ul`
     li:nth-child(2) {
         margin: 50px 0px;
     }
+
+    @media (min-width:400px) {
+        left: 42.5%;
+    }
 `;
