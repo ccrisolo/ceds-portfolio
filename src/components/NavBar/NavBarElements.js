@@ -14,7 +14,7 @@ export const NavigationContainer = styled.div`
 
 export const  Signature = styled.p`
     font-family: Creattion;
-    font-size: 45px;
+    font-size: 40px;
     align-self: flex-start;
 
     @media (max-width: 500px){

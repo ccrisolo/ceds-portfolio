@@ -104,6 +104,16 @@ p {
     font-size: larger;
 }
 
+.resume-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 198, 198);
+    border-radius: 12px;
+    height: 40px;
+    width: 180px;
+}
+
 @media (min-width: 900px) {
     .App {
         display: grid;

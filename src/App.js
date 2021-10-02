@@ -3,7 +3,7 @@ import Parallax from "react-rellax";
 import LottieAnimation from "./components/Lottie/LottieAnimation";
 import Desk from "./animations/Desk.json";
 import developer from "./animations/developer.json";
-import devGearsPurple from  "./animations/devGearsPurple.json";
+import devGearsPurple from "./animations/devGearsPurple.json";
 import NavBar from "./components/NavBar/NavBar";
 import Typewriter from "typewriter-effect";
 
@@ -45,6 +45,15 @@ function App() {
                             enjoy learning and thrive with people who are
                             excited to build and learn from one another.
                         </p>
+                        <div className='resume-link-container'>
+                            <a
+                                style={{textDecoration: 'none', color:'white'}}
+                                target='#'
+                                href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
+                            >
+                                See My Resume
+                            </a>
+                        </div>
                     </div>
                     <div className='illustration-1'>
                         <LottieAnimation
@@ -56,14 +65,14 @@ function App() {
                 </div>
                 <div className='projects-section'>
                     <h2>This will be the projects section</h2>
-                    <Parallax horizontal='true' speed={3} >
-                    <div className='illustration-2'>
-                        <LottieAnimation
-                            lotti={devGearsPurple}
-                            width={"100%"}
-                            height={"100%"}
-                        />
-                    </div>
+                    <Parallax horizontal='true' speed={3}>
+                        <div className='illustration-2'>
+                            <LottieAnimation
+                                lotti={devGearsPurple}
+                                width={"100%"}
+                                height={"100%"}
+                            />
+                        </div>
                     </Parallax>
                 </div>
                 <div className='education-section'>
