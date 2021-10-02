@@ -8,7 +8,7 @@ import {
     Line,
     Overlay,
     OverlayMenu,
-    Signature
+    Signature,
 } from "./NavBarElements";
 
 const NavBar = () => {
@@ -17,7 +17,9 @@ const NavBar = () => {
     return (
         <>
             <NavigationContainer open={toggleNav}>
-                <Signature>Cedric Crisolo</Signature>
+                <div>
+                    <Signature>Cedric Crisolo</Signature>
+                </div>
                 <Menu>
                     <Item>
                         <Link
@@ -40,7 +42,7 @@ const NavBar = () => {
                 </NavIcon>
             </NavigationContainer>
             <Overlay open={toggleNav} onClick={() => setToggleNav(!toggleNav)}>
-                <OverlayMenu open={toggleNav} >
+                <OverlayMenu open={toggleNav}>
                     <Item>
                         <Link
                             target='#'

@@ -14,8 +14,12 @@ export const NavigationContainer = styled.div`
 
 export const  Signature = styled.p`
     font-family: Creattion;
-    font-size: 30px;
+    font-size: 45px;
     align-self: flex-start;
+
+    @media (max-width: 500px){
+        font-size: 35px;
+    }
 `;
 
 export const Logo = styled.h1`

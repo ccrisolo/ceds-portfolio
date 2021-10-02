@@ -1,5 +1,6 @@
 .nav-bar {
     display: flex;
+    max-height: 70px;
 }
 
 .intro-section {

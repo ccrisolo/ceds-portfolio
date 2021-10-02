@@ -1,12 +1,9 @@
 import "./App.css";
-import Cursor from "./components/Cursor/Cursor";
 import Parallax from "react-rellax";
 import LottieAnimation from "./components/Lottie/LottieAnimation";
-import HomeOffice from "./animations/HomeOffice.json";
 import Desk from "./animations/Desk.json";
 import developer from "./animations/developer.json";
-import Portfolio from "./animations/Portfolio.json";
-import Task from "./animations/Task.json";
+import devGearsPurple from  "./animations/devGearsPurple.json";
 import NavBar from "./components/NavBar/NavBar";
 import Typewriter from "typewriter-effect";
 
@@ -24,7 +21,7 @@ function App() {
                                 options={{
                                     loop: false,
                                     cursor: "",
-                                    delay: 50,
+                                    delay: 40,
                                     cursorClassName: "type-cursor",
                                     wrapperClassName: "type-wrapper",
                                 }}
@@ -35,7 +32,7 @@ function App() {
                                         )
                                         .pauseFor(1000)
                                         .typeString(
-                                            `<h1>Let's build something <span style="color: purple;"> GREAT </span> together!</h1>`
+                                            `<h1>Let's build something <span style="color: #8832E0;"> GREAT </span> together!</h1>`
                                         )
                                         .start();
                                 }}
@@ -59,13 +56,15 @@ function App() {
                 </div>
                 <div className='projects-section'>
                     <h2>This will be the projects section</h2>
+                    <Parallax horizontal='true' speed={3} >
                     <div className='illustration-2'>
                         <LottieAnimation
-                            lotti={Portfolio}
+                            lotti={devGearsPurple}
                             width={"100%"}
                             height={"100%"}
                         />
                     </div>
+                    </Parallax>
                 </div>
                 <div className='education-section'>
                     <h2>This will be the education section</h2>
