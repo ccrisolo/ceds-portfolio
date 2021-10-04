@@ -85,7 +85,10 @@ function App() {
                                 className='social-icon'
                                 style={{ backgroundColor: "#3b5999" }}
                             >
-                                <a target='#' href='https://www.facebook.com/'>
+                                <a
+                                    target='#'
+                                    href='https://www.facebook.com/profile.php?id=100010520404073'
+                                >
                                     <FontAwesomeIcon
                                         icon={faFacebook}
                                         color='white'
