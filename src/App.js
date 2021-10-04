@@ -73,7 +73,7 @@ function App() {
                             >
                                 <a
                                     target='#'
-                                    href='https://www.linkedin.com/in/cedric-crisolo/'
+                                    href='https://github.com/ccrisolo'
                                 >
                                     <FontAwesomeIcon
                                         icon={faGithub}
