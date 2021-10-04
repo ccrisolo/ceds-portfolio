@@ -1,8 +1,7 @@
 import React from "react";
 import LottieAnimation from "../components/Lottie/LottieAnimation";
-import HomeOffice from "../animations/HomeOffice.json";
 
-const HomePage = props => {
+const IntroPage = props => {
     return (
         <>
             <div style={{ zIndex: -1 }}>
@@ -16,4 +15,4 @@ const HomePage = props => {
     );
 };
 
-export default HomePage;
+export default IntroPage;
