@@ -43,12 +43,18 @@ const NavBar = () => {
                         </Link>
                     </Item>
                     <Item>
-                        <Link target='#' href='https://www.facebook.com/'>
+                        <Link
+                            target='#'
+                            href='https://www.facebook.com/profile.php?id=100010520404073'
+                        >
                             <FontAwesomeIcon icon={faFacebook} size='1x' />
                         </Link>
                     </Item>
                     <Item>
-                        <Link target='#' href='https://twitter.com/CedricCrisolo'>
+                        <Link
+                            target='#'
+                            href='https://twitter.com/CedricCrisolo'
+                        >
                             <FontAwesomeIcon icon={faTwitter} size='1x' />
                         </Link>
                     </Item>
