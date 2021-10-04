@@ -1,5 +1,4 @@
 import "./App.css";
-import Parallax from "react-rellax";
 import LottieAnimation from "./components/Lottie/LottieAnimation";
 import Desk from "./animations/Desk.json";
 import developer from "./animations/developer.json";
@@ -11,9 +10,9 @@ import {
     faGithub,
     faLinkedin,
     faFacebook,
-    faTwitter
+    faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
     return (
@@ -86,10 +85,7 @@ function App() {
                                 className='social-icon'
                                 style={{ backgroundColor: "#3b5999" }}
                             >
-                                <a
-                                    target='#'
-                                    href=''
-                                >
+                                <a target='#' href='https://www.facebook.com/'>
                                     <FontAwesomeIcon
                                         icon={faFacebook}
                                         color='white'
@@ -120,7 +116,10 @@ function App() {
                                 target='#'
                                 href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
                             >
-                                See My Resume
+                                <FontAwesomeIcon icon={faFile} color='white' />
+                                <span style={{ marginLeft: "10px" }}>
+                                    See my resume
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -134,15 +133,13 @@ function App() {
                 </div>
                 <div className='projects-section'>
                     <h2>This will be the projects section</h2>
-                    <Parallax horizontal='true' speed={3}>
-                        <div className='illustration-2'>
-                            <LottieAnimation
-                                lotti={devGearsPurple}
-                                width={"100%"}
-                                height={"100%"}
-                            />
-                        </div>
-                    </Parallax>
+                    <div className='illustration-2'>
+                        <LottieAnimation
+                            lotti={devGearsPurple}
+                            width={"100%"}
+                            height={"100%"}
+                        />
+                    </div>
                 </div>
                 <div className='education-section'>
                     <h2>This will be the education section</h2>

@@ -5,19 +5,17 @@ export const NavigationContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    min-height: 30px;
+    min-height: 20px;
     background-color: rgba(55, 55, 55, 0.1);
     backdrop-filter: blur(3px);
     flex-grow: 1;
 `;
 
-
-export const  Signature = styled.p`
+export const Signature = styled.p`
     font-family: Creattion;
     font-size: 40px;
     align-self: flex-start;
-
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
         font-size: 35px;
     }
 `;
@@ -30,17 +28,16 @@ export const Logo = styled.h1`
 export const Menu = styled.ul`
     list-style: none;
     display: flex;
-
-    li:nth-child(2) {
-        margin: 0px 20px;
-    }
+    margin-right: 15px;
 
     @media (max-width: 1199px) {
         display: none;
     }
 `;
 
-export const Item = styled.li``;
+export const Item = styled.li`
+    padding-right: 30px;
+`;
 
 export const Link = styled.a`
     color: black;
@@ -58,7 +55,6 @@ export const NavIcon = styled.button`
     outline: none;
 
     :hover {
-
     }
 
     @media (min-width: 1200px) {
@@ -113,7 +109,7 @@ export const OverlayMenu = styled.ul`
         margin: 50px 0px;
     }
 
-    @media (min-width:400px) {
+    @media (min-width: 400px) {
         left: 42.5%;
     }
 `;
