@@ -86,17 +86,23 @@ const NavBar = () => {
                         </Link>
                     </Item>
                     <Item>
-                        <Link target='#' href='https://github.com/ccrisolo'>
+                        <Link
+                            target='#'
+                            href='https://www.facebook.com/profile.php?id=100010520404073'
+                        >
                             <FontAwesomeIcon icon={faFacebook} /> Facebook
                         </Link>
                     </Item>
                     <Item>
-                        <Link target='#' href='https://github.com/ccrisolo'>
+                        <Link
+                            target='#'
+                            href='https://twitter.com/CedricCrisolo'
+                        >
                             <FontAwesomeIcon icon={faTwitter} /> Twitter
                         </Link>
                     </Item>
                     <Item>
-                        <Link target='#' href='https://github.com/ccrisolo'>
+                        <Link target='#' href='mailto: ccrisolo3@gmail.com'>
                             <FontAwesomeIcon icon={faEnvelope} /> Email
                         </Link>
                     </Item>
