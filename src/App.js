@@ -39,7 +39,7 @@ function App() {
                                         )
                                         .pauseFor(1000)
                                         .typeString(
-                                            `<h1>Let's build something <span style="color: #8832E0;"> GREAT </span> together!</h1>`
+                                            `<h1>Let's build something <span style="color: #f53bff;"> GREAT </span> together!</h1>`
                                         )
                                         .start();
                                 }}
@@ -107,8 +107,9 @@ function App() {
                                 </a>
                             </div>
                         </div>
-                        <div className='resume-link-container'>
+                        <div>
                             <a
+                                className='resume-link-container'
                                 style={{
                                     textDecoration: "none",
                                     color: "white",
@@ -117,9 +118,7 @@ function App() {
                                 href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
                             >
                                 <FontAwesomeIcon icon={faFile} color='white' />
-                                <span style={{ marginLeft: "10px" }}>
-                                    See my resume
-                                </span>
+                                <span className='resume-text'>My resume</span>
                             </a>
                         </div>
                     </div>

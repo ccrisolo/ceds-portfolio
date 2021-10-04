@@ -13,6 +13,7 @@ export const NavigationContainer = styled.div`
 
 export const Signature = styled.p`
     font-family: Creattion;
+    color: white;
     font-size: 40px;
     align-self: flex-start;
     @media (max-width: 500px) {
@@ -40,11 +41,12 @@ export const Item = styled.li`
 `;
 
 export const Link = styled.a`
-    color: black;
+    color: white;
     text-decoration: none;
 
     :hover {
         text-decoration: underline;
+        opacity: 0.5;
     }
 `;
 
@@ -68,7 +70,7 @@ export const Line = styled.span`
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: black;
+    background-color: white;
     transition: width 0.4s ease-in-out;
 
     :nth-child(2) {
