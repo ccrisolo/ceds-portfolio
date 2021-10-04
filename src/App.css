@@ -1,5 +1,6 @@
 .App {
-    background-image: url(./background/gradient.jpeg);
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("./background/gradient.jpeg");
     background-size: cover;
 }
 
