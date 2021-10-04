@@ -12,7 +12,7 @@ import {
     faFacebook,
     faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
+import { faFile } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
     return (
