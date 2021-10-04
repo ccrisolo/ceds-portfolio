@@ -105,11 +105,10 @@ export const OverlayMenu = styled.ul`
         opacity: ${props => (props.open ? 1 : 0)};
         font-size: 25px;
         transition: opacity 0.4s ease-in-out;
+        margin-top:35px;
     }
 
-    li:nth-child(2) {
-        margin: 50px 0px;
-    }
+   
 
     @media (min-width: 400px) {
         left: 42.5%;
