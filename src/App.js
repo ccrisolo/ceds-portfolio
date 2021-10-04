@@ -1,14 +1,18 @@
 import "./App.css";
-import Cursor from "./components/Cursor/Cursor";
-import Parallax from "react-rellax";
 import LottieAnimation from "./components/Lottie/LottieAnimation";
-import HomeOffice from "./animations/HomeOffice.json";
 import Desk from "./animations/Desk.json";
 import developer from "./animations/developer.json";
-import Portfolio from "./animations/Portfolio.json";
-import Task from "./animations/Task.json";
+import devGearsPurple from "./animations/devGearsPurple.json";
 import NavBar from "./components/NavBar/NavBar";
 import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub,
+    faLinkedin,
+    faFacebook,
+    faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
     return (
@@ -24,7 +28,7 @@ function App() {
                                 options={{
                                     loop: false,
                                     cursor: "",
-                                    delay: 50,
+                                    delay: 40,
                                     cursorClassName: "type-cursor",
                                     wrapperClassName: "type-wrapper",
                                 }}
@@ -35,7 +39,7 @@ function App() {
                                         )
                                         .pauseFor(1000)
                                         .typeString(
-                                            `<h1>Let's build something <span style="color: purple;"> GREAT </span> together!</h1>`
+                                            `<h1>Let's build something <span style="color: #f53bff;"> GREAT </span> together!</h1>`
                                         )
                                         .start();
                                 }}
@@ -48,6 +52,75 @@ function App() {
                             enjoy learning and thrive with people who are
                             excited to build and learn from one another.
                         </p>
+                        <div className='social-links-container'>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "#1da1f2" }}
+                            >
+                                <a
+                                    target='#'
+                                    href='https://www.linkedin.com/in/cedric-crisolo/'
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faLinkedin}
+                                        color='white'
+                                    />
+                                </a>
+                            </div>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "black" }}
+                            >
+                                <a
+                                    target='#'
+                                    href='https://www.linkedin.com/in/cedric-crisolo/'
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faGithub}
+                                        color='white'
+                                    />
+                                </a>
+                            </div>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "#3b5999" }}
+                            >
+                                <a target='#' href='https://www.facebook.com/'>
+                                    <FontAwesomeIcon
+                                        icon={faFacebook}
+                                        color='white'
+                                    />
+                                </a>
+                            </div>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "#1da1f2" }}
+                            >
+                                <a
+                                    target='#'
+                                    href='https://twitter.com/CedricCrisolo'
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faTwitter}
+                                        color='white'
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a
+                                className='resume-link-container'
+                                style={{
+                                    textDecoration: "none",
+                                    color: "white",
+                                }}
+                                target='#'
+                                href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
+                            >
+                                <FontAwesomeIcon icon={faFile} color='white' />
+                                <span className='resume-text'>My resume</span>
+                            </a>
+                        </div>
                     </div>
                     <div className='illustration-1'>
                         <LottieAnimation
@@ -61,7 +134,7 @@ function App() {
                     <h2>This will be the projects section</h2>
                     <div className='illustration-2'>
                         <LottieAnimation
-                            lotti={Portfolio}
+                            lotti={devGearsPurple}
                             width={"100%"}
                             height={"100%"}
                         />
