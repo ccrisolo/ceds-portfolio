@@ -11,6 +11,7 @@ import {
     faGithub,
     faLinkedin,
     faFacebook,
+    faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
@@ -53,7 +54,10 @@ function App() {
                             excited to build and learn from one another.
                         </p>
                         <div className='social-links-container'>
-                            <div className='resume-link-container'>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "#1da1f2" }}
+                            >
                                 <a
                                     target='#'
                                     href='https://www.linkedin.com/in/cedric-crisolo/'
@@ -64,16 +68,46 @@ function App() {
                                     />
                                 </a>
                             </div>
-                            <div className='resume-link-container'>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "black" }}
+                            >
                                 <a
-                                    style={{
-                                        textDecoration: "none",
-                                        color: "white",
-                                    }}
                                     target='#'
-                                    href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
+                                    href='https://www.linkedin.com/in/cedric-crisolo/'
                                 >
-                                    See My Resume
+                                    <FontAwesomeIcon
+                                        icon={faGithub}
+                                        color='white'
+                                    />
+                                </a>
+                            </div>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "#3b5999" }}
+                            >
+                                <a
+                                    target='#'
+                                    href=''
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faFacebook}
+                                        color='white'
+                                    />
+                                </a>
+                            </div>
+                            <div
+                                className='social-icon'
+                                style={{ backgroundColor: "#1da1f2" }}
+                            >
+                                <a
+                                    target='#'
+                                    href='https://twitter.com/CedricCrisolo'
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faTwitter}
+                                        color='white'
+                                    />
                                 </a>
                             </div>
                         </div>
