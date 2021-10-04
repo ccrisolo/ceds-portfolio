@@ -45,7 +45,6 @@ export const Link = styled.a`
     text-decoration: none;
 
     :hover {
-        text-decoration: underline;
         opacity: 0.5;
     }
 `;
@@ -107,8 +106,6 @@ export const OverlayMenu = styled.ul`
         transition: opacity 0.4s ease-in-out;
         margin-top:35px;
     }
-
-   
 
     @media (min-width: 400px) {
         left: 42.5%;
