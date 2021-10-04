@@ -4,6 +4,7 @@ import Desk from "./animations/Desk.json";
 import devGearsPurple from "./animations/devGearsPurple.json";
 import NavBar from "./components/NavBar/NavBar";
 import IntroPage from "./Pages/Intro/IntroPage";
+import ProjectsPage from "./Pages/Projects/ProjectsPage";
 
 function App() {
     return (
@@ -16,14 +17,7 @@ function App() {
                     <IntroPage />
                 </div>
                 <div className='projects-section'>
-                    <h2>This will be the projects section</h2>
-                    <div className='illustration-2'>
-                        <LottieAnimation
-                            lotti={devGearsPurple}
-                            width={"100%"}
-                            height={"100%"}
-                        />
-                    </div>
+                   <ProjectsPage />
                 </div>
                 <div className='education-section'>
                     <h2>This will be the education section</h2>

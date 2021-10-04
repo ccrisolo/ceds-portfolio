@@ -9,6 +9,7 @@
 .social-links-container {
     display: flex;
     justify-content: flex-start;
+    margin-top: 5%;
 }
 
 .social-icon {
@@ -38,7 +39,7 @@
     border-radius: 12px;
     height: 40px;
     width: 180px;
-    margin-top: 5%;
+    margin-top: 7%;
     box-shadow: 2px 5px 5px #2d2d2d;
 }
 
