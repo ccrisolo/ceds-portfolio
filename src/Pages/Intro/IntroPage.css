@@ -6,6 +6,11 @@
     margin-right: 12px;
 }
 
+.type-wrapper {
+    line-height: 2em;
+    font-size: larger;
+}
+
 .social-links-container {
     display: flex;
     justify-content: flex-start;
@@ -57,7 +62,6 @@
     margin-left: 12px;
     font-weight: 600;
 }
-
 
 .illustration-1 {
     animation: fadeIn 3s, slideIn 3s;
@@ -121,8 +125,6 @@
     }
 }
 
-
-
 h1 {
     color: white;
 }
@@ -138,14 +140,15 @@ p {
     color: white;
 }
 
-
-
-
 /* Media Queries below */
-@media (min-width: 900px) {  
+@media (min-width: 900px) {
     .typing-container {
         min-height: 125px;
         min-width: 700px;
+    }
+    .type-wrapper {
+        line-height: 1.25em;
+        font-size: larger;
     }
 
     .intro {
