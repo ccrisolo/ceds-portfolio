@@ -1,3 +1,7 @@
+.App {
+    background-color:rgb(238, 238, 238);
+}
+
 .nav-bar {
     display: flex;
     max-height: 70px;
@@ -76,8 +80,14 @@
 
     min-height: 100vh;
 }
+
 .education-section {
     min-height: 100vh;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -114,6 +124,7 @@ p {
     width: 180px;
 }
 
+/* Media Queries below */
 @media (min-width: 900px) {
     .App {
         display: grid;

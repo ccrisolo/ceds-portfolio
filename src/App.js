@@ -6,6 +6,13 @@ import developer from "./animations/developer.json";
 import devGearsPurple from "./animations/devGearsPurple.json";
 import NavBar from "./components/NavBar/NavBar";
 import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub,
+    faLinkedin,
+    faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
     return (
@@ -45,9 +52,37 @@ function App() {
                             enjoy learning and thrive with people who are
                             excited to build and learn from one another.
                         </p>
+                        <div className='social-links-container'>
+                            <div className='resume-link-container'>
+                                <a
+                                    target='#'
+                                    href='https://www.linkedin.com/in/cedric-crisolo/'
+                                >
+                                    <FontAwesomeIcon
+                                        icon={faLinkedin}
+                                        color='white'
+                                    />
+                                </a>
+                            </div>
+                            <div className='resume-link-container'>
+                                <a
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white",
+                                    }}
+                                    target='#'
+                                    href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
+                                >
+                                    See My Resume
+                                </a>
+                            </div>
+                        </div>
                         <div className='resume-link-container'>
                             <a
-                                style={{textDecoration: 'none', color:'white'}}
+                                style={{
+                                    textDecoration: "none",
+                                    color: "white",
+                                }}
                                 target='#'
                                 href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
                             >
