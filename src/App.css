@@ -15,8 +15,20 @@
 }
 
 .projects-section {
-    background-color: white;
+    opacity: 0;
+    background-color:rgba(255, 255, 255, 0.45);
+    /* background-color: white; */
     min-height: 100vh;
+    visibility: hidden;
+    transform: translateY(20vh);
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.projects-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 
 .education-section {
