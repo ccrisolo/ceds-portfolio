@@ -1,15 +1,17 @@
 .projects-container {
     display: grid;
-    gap: 5px;
+    gap: 15px;
+    justify-content: center;
 }
 
 .project {
+    background-color: rgb(77, 79, 183, 0.45);
     display: flex;
-    min-height: 250px;
+    height: 400px;
+    width: 375px;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    border: 1px black solid;
     box-shadow: 2px 5px 5px #2d2d2d;
 }
 
@@ -21,17 +23,15 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin-top: 5%;
+        justify-content: center;
+        align-items: center;
     }
 
     .project {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px black solid;
         border-radius: 15px;
         box-shadow: 2px 5px 5px #2d2d2d;
-        max-width: 400px;
-        max-height: 400px;
     }
 }

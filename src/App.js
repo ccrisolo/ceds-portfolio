@@ -9,14 +9,15 @@ import ProjectsPage from "./Pages/Projects/ProjectsPage";
 
 function App() {
     const [isVisible, setIsVisible] = useState(false);
-    const domRef = useRef();
+    const domRefNode = useRef();
 
+    // fade in transition observer for when elements are visible 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => setIsVisible(entry.isIntersecting));
         });
-        observer.observe(domRef.current);
-        return () => observer.observe(domRef.current);
+        observer.observe(domRefNode.current);
+        return () => observer.unobserve(domRefNode.current);
     }, []);
 
     return (
@@ -32,7 +33,7 @@ function App() {
                     className={`projects-section ${
                         isVisible ? `is-visible` : ""
                     }`}
-                    ref={domRef}
+                    ref={domRefNode}
                 >
                     <ProjectsPage />
                 </div>
