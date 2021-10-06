@@ -56,7 +56,10 @@
 }
 
 .section-title{
+    display: flex;
+    align-items: flex-start;
     color: white;
+    
 }
 
 @media (min-width: 900px) {
