@@ -81,8 +81,8 @@ export const Overlay = styled.div`
     position: absolute;
     height: ${props => (props.open ? "100vh" : 0)};
     width: 100vw;
-    background-color: rgba(55, 55, 55, 0.1);
-    backdrop-filter: blur(3px);
+    background-color: rgba(55, 55, 55, 0.3);
+    backdrop-filter: blur(5px);
     transition: height 0.4s ease-in-out;
     z-index: 4;
 
