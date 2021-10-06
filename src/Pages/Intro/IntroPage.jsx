@@ -10,8 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
 import developer from "../../animations/developer.json";
-import './IntroPage.css'
-
+import "./IntroPage.css";
 
 const IntroPage = props => {
     return (
@@ -41,8 +40,8 @@ const IntroPage = props => {
                     I'm a passionate Frontend Developer with experience in both
                     Web and Mobile. My favorite technologies to use are
                     JavaScript, React, React Native and Redux. I enjoy learning
-                    and thrive with people who are excited to build and learn
-                    from one another.
+                    about software development and thrive with people who are
+                    excited to build and learn from one another. 
                 </p>
                 <div className='social-links-container'>
                     <div
@@ -95,7 +94,7 @@ const IntroPage = props => {
                         href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
                     >
                         <FontAwesomeIcon icon={faFile} color='white' />
-                        <span className='resume-text'>My resume</span>
+                        <span className='resume-text'>My Resume</span>
                     </a>
                 </div>
             </div>
