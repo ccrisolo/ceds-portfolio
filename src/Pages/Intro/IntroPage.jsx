@@ -41,7 +41,7 @@ const IntroPage = props => {
                     Web and Mobile. My favorite technologies to use are
                     JavaScript, React, React Native and Redux. I enjoy learning
                     about software development and thrive with people who are
-                    excited to build and learn from one another. 
+                    excited to build and learn from one another.
                 </p>
                 <div className='social-links-container'>
                     <div

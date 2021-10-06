@@ -31,6 +31,38 @@ const NavBar = () => {
                 <Menu>
                     <Item>
                         <Link
+                            
+                            href='#projects'
+                        >
+                            Projects
+                        </Link>
+                    </Item>
+                    <Item>
+                        <Link
+                            
+                            href='#education'
+                        >
+                            Education
+                        </Link>
+                    </Item>
+                    <Item>
+                        <Link
+                            
+                            href='#about'
+                        >
+                            About
+                        </Link>
+                    </Item>
+                    <Item>
+                        <Link
+                            
+                            href='#contact'
+                        >
+                            Contact
+                        </Link>
+                    </Item>
+                    {/* <Item>
+                        <Link
                             target='#'
                             href='https://www.linkedin.com/in/cedric-crisolo/'
                         >
@@ -62,7 +94,7 @@ const NavBar = () => {
                         <Link target='#' href='mailto: ccrisolo3@gmail.com'>
                             <FontAwesomeIcon icon={faEnvelope} size='1x' />
                         </Link>
-                    </Item>
+                    </Item> */}
                 </Menu>
                 <NavIcon onClick={() => setToggleNav(!toggleNav)}>
                     <Line open={toggleNav} />
@@ -72,6 +104,14 @@ const NavBar = () => {
             </NavigationContainer>
             <Overlay open={toggleNav} onClick={() => setToggleNav(!toggleNav)}>
                 <OverlayMenu open={toggleNav}>
+                    <Item>
+                        <Link
+                            
+                            href='#projects'
+                        >
+                            Projects
+                        </Link>
+                    </Item>
                     <Item>
                         <Link
                             target='#'
