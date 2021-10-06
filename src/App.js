@@ -2,7 +2,6 @@ import "./App.css";
 import React, { useState, useRef, useEffect } from "react";
 import LottieAnimation from "./components/Lottie/LottieAnimation";
 import Desk from "./animations/Desk.json";
-import devGearsPurple from "./animations/devGearsPurple.json";
 import NavBar from "./components/NavBar/NavBar";
 import IntroPage from "./Pages/Intro/IntroPage";
 import ProjectsPage from "./Pages/Projects/ProjectsPage";
@@ -34,10 +33,11 @@ function App() {
                         isVisible ? `is-visible` : ""
                     }`}
                     ref={domRefNode}
+                    id='projects'
                 >
                     <ProjectsPage />
                 </div>
-                <div className='education-section'>
+                <div className='education-section' id='education' >
                     <h2>This will be the education section</h2>
                     <div className='illustration-3'>
                         <LottieAnimation

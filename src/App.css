@@ -17,7 +17,7 @@
 .projects-section {
     padding: 30px;
     opacity: 0;
-    background-color:rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.35);
     min-height: 100vh;
     visibility: hidden;
     transform: translateY(20vh);
@@ -50,6 +50,14 @@ p {
     color: white;
 }
 
+#education {
+    scroll-padding-top: 25px;
+}
+
+#projects{
+    scroll-margin-top: 115px;
+}
+
 /* Media Queries below */
 @media (min-width: 900px) {
     .App {
@@ -74,6 +82,10 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column: 1/-1;
+    }
+
+    #projects{
+        scroll-margin-top: 125px;
     }
 }
 
