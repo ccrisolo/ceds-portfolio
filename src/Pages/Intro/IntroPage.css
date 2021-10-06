@@ -69,6 +69,7 @@
     -moz-animation: fadeIn 3s, slideIn 3s;
     -o-animation: fadeIn 3s, slideIn 3s;
     -ms-animation: fadeIn 3s, slideIn 3s;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 /* takes care of different browsers */
