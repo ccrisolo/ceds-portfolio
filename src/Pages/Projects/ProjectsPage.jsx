@@ -39,7 +39,7 @@ const ProjectsPage = () => {
                         >
                             <FontAwesomeIcon icon={faLink} color='white' />
                             <span className='project-link-text'>
-                                Click to Demo
+                                Click to See
                             </span>
                         </a>
                     </div>
@@ -71,13 +71,32 @@ const ProjectsPage = () => {
                 <FadeInSection>
                     <div className='project'>
                         <h1 className='project-title'>YouTube Clone</h1>
+                        <p className='project-body'>
+                            YouTube Clone was created using the MERN stack and
+                            utilizes the YouTube API. Users can search for
+                            videos & add/remove to a favorites list.
+                        </p>
+                        <a
+                            className='project-link-container'
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                            }}
+                            target='#'
+                            // href=''
+                        >
+                            <FontAwesomeIcon icon={faLink} color='white' />
+                            <span className='project-link-text'>
+                                Click to See
+                            </span>
+                        </a>
                     </div>
                 </FadeInSection>
-                <FadeInSection>
+                {/* <FadeInSection>
                     <div className='project'>
                         <h1 className='project-title'>Project 4: Undecided</h1>
                     </div>
-                </FadeInSection>
+                </FadeInSection> */}
             </div>
         </>
     );

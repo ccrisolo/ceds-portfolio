@@ -30,36 +30,16 @@ const NavBar = () => {
                 </div>
                 <Menu>
                     <Item>
-                        <Link
-                            
-                            href='#projects'
-                        >
-                            Projects
-                        </Link>
+                        <Link href='#projects'>Projects</Link>
                     </Item>
                     <Item>
-                        <Link
-                            
-                            href='#education'
-                        >
-                            Education
-                        </Link>
+                        <Link href='#education'>Education</Link>
                     </Item>
                     <Item>
-                        <Link
-                            
-                            href='#about'
-                        >
-                            About
-                        </Link>
+                        <Link href='#about'>About</Link>
                     </Item>
                     <Item>
-                        <Link
-                            
-                            href='#contact'
-                        >
-                            Contact
-                        </Link>
+                        <Link href='#contact'>Contact</Link>
                     </Item>
                     {/* <Item>
                         <Link
@@ -105,42 +85,18 @@ const NavBar = () => {
             <Overlay open={toggleNav} onClick={() => setToggleNav(!toggleNav)}>
                 <OverlayMenu open={toggleNav}>
                     <Item>
-                        <Link
-                            
-                            href='#projects'
-                        >
-                            Projects
-                        </Link>
+                        <Link href='#projects'>Projects</Link>
                     </Item>
                     <Item>
-                        <Link
-                            target='#'
-                            href='https://www.linkedin.com/in/cedric-crisolo/'
-                        >
-                            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-                        </Link>
+                        <Link href='#education'>Education</Link>
                     </Item>
                     <Item>
-                        <Link target='#' href='https://github.com/ccrisolo'>
-                            <FontAwesomeIcon icon={faGithub} /> GitHub
-                        </Link>
+                        <Link href='#about'>About</Link>
                     </Item>
                     <Item>
-                        <Link
-                            target='#'
-                            href='https://www.facebook.com/profile.php?id=100010520404073'
-                        >
-                            <FontAwesomeIcon icon={faFacebook} /> Facebook
-                        </Link>
+                        <Link href='#contact'>Contact</Link>
                     </Item>
-                    <Item>
-                        <Link
-                            target='#'
-                            href='https://twitter.com/CedricCrisolo'
-                        >
-                            <FontAwesomeIcon icon={faTwitter} /> Twitter
-                        </Link>
-                    </Item>
+                   
                     <Item>
                         <Link target='#' href='mailto: ccrisolo3@gmail.com'>
                             <FontAwesomeIcon icon={faEnvelope} /> Email

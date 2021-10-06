@@ -45,7 +45,7 @@ export const Link = styled.a`
     text-decoration: none;
 
     :hover {
-        opacity: 0.5;
+        color: rgb(122, 88, 173);
     }
 `;
 
