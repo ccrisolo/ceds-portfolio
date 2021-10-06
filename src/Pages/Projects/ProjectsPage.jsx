@@ -10,7 +10,7 @@ const ProjectsPage = () => {
     return (
         <>
             <div className='illustration-2'>
-                <h2 className='section-title'>My Work</h2>
+                <h2 className='section-title'>My Projects</h2>
                 <FadeInSection>
                     <LottieAnimation
                         lotti={devGearsPurple}
