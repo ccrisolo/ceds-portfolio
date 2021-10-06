@@ -5,14 +5,58 @@
 }
 
 .project {
-    background-color: rgb(77, 79, 183, 0.45);
+    background-color: rgba(144, 147, 239, 0.45);
     display: flex;
+    flex-direction: column;
     height: 400px;
     width: 375px;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     box-shadow: 2px 5px 5px #2d2d2d;
+}
+
+.project-title {
+    color: white;
+    font-size: x-large;
+}
+
+.project-body{
+  justify-content: center;
+  align-items: center;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.project-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(176, 176, 176);
+    border-radius: 12px;
+    height: 40px;
+    width: 190px;
+    margin-top: 7%;
+    box-shadow: 2px 5px 5px #2d2d2d;
+}
+
+.project-link-container:hover {
+    background-color: rgb(122, 88, 173);
+    cursor: pointer;
+}
+
+.project-link-container:active {
+    box-shadow: 0 2px 5px #666;
+    transform: translateY(2px);
+}
+
+.project-link-text {
+    margin-left: 12px;
+    font-weight: 600;
+}
+
+.section-title{
+    color: white;
 }
 
 @media (min-width: 900px) {

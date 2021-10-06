@@ -94,7 +94,7 @@ const IntroPage = props => {
                         href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
                     >
                         <FontAwesomeIcon icon={faFile} color='white' />
-                        <span className='resume-text'>My resume</span>
+                        <span className='resume-text'>My Resume</span>
                     </a>
                 </div>
             </div>
