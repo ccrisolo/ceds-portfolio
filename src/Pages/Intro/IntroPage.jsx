@@ -38,7 +38,7 @@ const IntroPage = props => {
                 </div>
                 <p>
                     I'm a passionate Frontend Developer with experience in both
-                    Web and Mobile. My favorite technologies to use are
+                    Web and Mobile. A few of my favorite technologies to use are
                     JavaScript, React, React Native and Redux. I enjoy learning
                     about software development and thrive with people who are
                     excited to build and learn from one another.
