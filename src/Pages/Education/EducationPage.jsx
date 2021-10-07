@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./EducationPage.css";
 import LottieAnimation from "../../components/Lottie/LottieAnimation";
 import BackToSchool from "../../animations/BackToSchool.json";
 import FadeInSection from "../../components/FadeIn/FadeInSection";
+import ScaleOutComponent from "../../components/ScaleOut/ScaleOutComponent";
 
 const EducationPage = props => {
     return (
@@ -11,7 +12,7 @@ const EducationPage = props => {
                 <h2 className='section-title'>Education</h2>
             </div>
             <div className='education-container'>
-                <FadeInSection>
+                <ScaleOutComponent>
                     <div className='education-tile'>
                         <h3 className='school-name'>General Assembly</h3>
                         <p className='education-body'>
@@ -21,8 +22,8 @@ const EducationPage = props => {
                             nesciunt cupiditate?
                         </p>
                     </div>
-                </FadeInSection>
-                <FadeInSection>
+                </ScaleOutComponent>
+                <ScaleOutComponent>
                     <div className='education-tile'>
                         <h3 className='school-name'>
                             Florida Institute of Technology
@@ -34,8 +35,8 @@ const EducationPage = props => {
                             nesciunt cupiditate?
                         </p>
                     </div>
-                </FadeInSection>
-                <FadeInSection>
+                </ScaleOutComponent>
+                <ScaleOutComponent>
                     <div className='education-tile'>
                         <h3 className='school-name'>
                             Phillips Graduate Institute
@@ -47,7 +48,7 @@ const EducationPage = props => {
                             nesciunt cupiditate?
                         </p>
                     </div>
-                </FadeInSection>
+                </ScaleOutComponent>
             </div>
         </>
     );
