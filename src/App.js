@@ -5,12 +5,13 @@ import Desk from "./animations/Desk.json";
 import NavBar from "./components/NavBar/NavBar";
 import IntroPage from "./Pages/Intro/IntroPage";
 import ProjectsPage from "./Pages/Projects/ProjectsPage";
+import EducationPage from "./Pages/Education/EducationPage";
 
 function App() {
     const [isVisible, setIsVisible] = useState(false);
     const domRefNode = useRef();
 
-    // fade in transition observer for when elements are visible 
+    // fade in transition observer for when elements are visible
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => setIsVisible(entry.isIntersecting));
@@ -37,16 +38,15 @@ function App() {
                 >
                     <ProjectsPage />
                 </div>
-                <div className='education-section' id='education' >
-                    <h2>This will be the education section</h2>
-                    <div className='illustration-3'>
-                        <LottieAnimation
-                            lotti={Desk}
-                            width={"100%"}
-                            height={"100%"}
-                        />
-                    </div>
+                <div className='education-section' id='education'>
+                    <EducationPage />
                 </div>
+                {/* <div className='about-section' id='about'>
+                    <AboutPage />
+                </div>
+                <div className='contact-section' id='contact'>
+                    <ContactPage />
+                </div> */}
             </div>
         </>
     );
