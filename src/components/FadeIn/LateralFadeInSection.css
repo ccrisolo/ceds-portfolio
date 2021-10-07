@@ -1,6 +1,7 @@
 .lateral-fade-section {
+    width: 100%;
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(-200px);
     visibility: hidden;
     transition: opacity 0.7s ease-out, transform 1.2s ease-out;
     will-change: opacity, visibility;

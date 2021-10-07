@@ -2,7 +2,7 @@ import React from "react";
 import LottieAnimation from "../../components/Lottie/LottieAnimation";
 import devGearsPurple from "../../animations/devGearsPurple.json";
 import "./ProjectsPage.css";
-import FadeInSection from "../../components/FadeIn/FadeInSection";
+import LateralFadeInSection from "../../components/FadeIn/LateralFadeInSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faVideo } from "@fortawesome/free-solid-svg-icons";
 
@@ -11,16 +11,16 @@ const ProjectsPage = () => {
         <>
             <div className='illustration-2'>
                 <h2 className='section-title'>Projects</h2>
-                <FadeInSection>
+                <LateralFadeInSection>
                     <LottieAnimation
                         lotti={devGearsPurple}
                         width={"100%"}
                         height={"100%"}
                     />
-                </FadeInSection>
+                </LateralFadeInSection>
             </div>
             <div className='projects-container'>
-                <FadeInSection>
+                <LateralFadeInSection>
                     <div className='project'>
                         <h1 className='project-title'>Ecosystem Web</h1>
                         <p className='project-body'>
@@ -43,8 +43,8 @@ const ProjectsPage = () => {
                             </span>
                         </a>
                     </div>
-                </FadeInSection>
-                <FadeInSection>
+                </LateralFadeInSection>
+                <LateralFadeInSection>
                     <div className='project'>
                         <h1 className='project-title'>Ecosystem Mobile</h1>
                         <p className='project-body'>
@@ -67,8 +67,8 @@ const ProjectsPage = () => {
                             </span>
                         </a>
                     </div>
-                </FadeInSection>
-                <FadeInSection>
+                </LateralFadeInSection>
+                <LateralFadeInSection>
                     <div className='project'>
                         <h1 className='project-title'>YouTube Clone</h1>
                         <p className='project-body'>
@@ -91,12 +91,12 @@ const ProjectsPage = () => {
                             </span>
                         </a>
                     </div>
-                </FadeInSection>
-                {/* <FadeInSection>
+                </LateralFadeInSection>
+                {/* <LateralFadeInSection>
                     <div className='project'>
                         <h1 className='project-title'>Project 4: Undecided</h1>
                     </div>
-                </FadeInSection> */}
+                </LateralFadeInSection> */}
             </div>
         </>
     );
