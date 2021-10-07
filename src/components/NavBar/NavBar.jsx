@@ -9,6 +9,7 @@ import {
     Overlay,
     OverlayMenu,
     Signature,
+    CloseBtnX,
 } from "./NavBarElements";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -84,6 +85,9 @@ const NavBar = () => {
             </NavigationContainer>
             <Overlay open={toggleNav} onClick={() => setToggleNav(!toggleNav)}>
                 <OverlayMenu open={toggleNav}>
+                    <CloseBtnX>
+                        <h4>Close</h4>{" "}
+                    </CloseBtnX>
                     <Item>
                         <Link href='#projects'>Projects</Link>
                     </Item>
@@ -96,7 +100,7 @@ const NavBar = () => {
                     <Item>
                         <Link href='#contact'>Contact</Link>
                     </Item>
-                   
+
                     <Item>
                         <Link target='#' href='mailto: ccrisolo3@gmail.com'>
                             <FontAwesomeIcon icon={faEnvelope} /> Email

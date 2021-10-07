@@ -55,9 +55,6 @@ export const NavIcon = styled.button`
     border: none;
     outline: none;
 
-    :hover {
-    }
-
     @media (min-width: 1200px) {
         display: none;
     }
@@ -82,7 +79,7 @@ export const Overlay = styled.div`
     height: ${props => (props.open ? "100vh" : 0)};
     width: 100vw;
     background-color: rgba(55, 55, 55, 0.7);
-    backdrop-filter: blur(5px) contrast(.8);
+    backdrop-filter: blur(5px) contrast(0.8);
     transition: height 0.4s ease-in-out;
     z-index: 4;
 
@@ -104,10 +101,21 @@ export const OverlayMenu = styled.ul`
         opacity: ${props => (props.open ? 1 : 0)};
         font-size: 25px;
         transition: opacity 0.4s ease-in-out;
-        margin-top:35px;
+        margin-top: 35px;
     }
 
     @media (min-width: 400px) {
         left: 42.5%;
+    }
+`;
+
+export const CloseBtnX = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    cursor: pointer;
+
+    :hover {
+        color: rgb(122, 88, 173);
     }
 `;
