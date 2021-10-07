@@ -1,0 +1,13 @@
+.scale-out-element {
+    width: 100%;
+    opacity: 0;
+    transform: scale(.5,.025);
+    visibility: hidden;
+    transition: scale 0.7s ease-in, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+.scale-out-element.is-visible {
+    opacity: 1;
+    transform: scale(1,1);
+    visibility: visible;
+}
