@@ -121,10 +121,11 @@ const EducationPage = props => {
                         </h3>
                         <span className='date-range'>Sept 2008 - May 2010</span>
                         <p className='education-body'>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Ea, deleniti modi distinctio commodi, rerum
-                            obcaecati cum recusandae quod explicabo vitae animi
-                            nesciunt cupiditate?
+                            Attained Master's in Clinical Psychology which
+                            included training in areas such as Relationship
+                            Dynamics, Diversity, Assessments, Intervention, and
+                            Research/Evaluation Competency through a combination
+                            of lectures and clinical internships.
                         </p>
                     </div>
                 </ScaleOutComponent>
