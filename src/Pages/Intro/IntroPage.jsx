@@ -8,7 +8,7 @@ import {
     faFacebook,
     faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faFile } from "@fortawesome/free-regular-svg-icons";
+import { faFile, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import developer from "../../animations/developer.json";
 import "./IntroPage.css";
 
@@ -80,6 +80,14 @@ const IntroPage = props => {
                     >
                         <a target='#' href='https://twitter.com/CedricCrisolo'>
                             <FontAwesomeIcon icon={faTwitter} color='white' />
+                        </a>
+                    </div>
+                    <div
+                        className='social-icon'
+                        style={{ backgroundColor: "#202020" }}
+                    >
+                        <a target='#' href='mailto: ccrisolo3@gmail.com'>
+                            <FontAwesomeIcon icon={faEnvelope} color='white' />
                         </a>
                     </div>
                 </div>

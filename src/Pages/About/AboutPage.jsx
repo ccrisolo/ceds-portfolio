@@ -31,9 +31,9 @@ const AboutPage = () => {
             </div>
             <div className='reach-out'>
                 <h3>
-                    Want to work together? Feel free to reach out! I'm a
-                    Frontend Software Engineer for Web and Mobile with Full
-                    Stack Experience.
+                    Want to work together? Contact me at the links below!
+                    I'm a Frontend Software Engineer for Web and Mobile with
+                    Full Stack Experience.
                 </h3>
             </div>
         </>

@@ -40,42 +40,8 @@ const NavBar = () => {
                         <Link href='#about'>About</Link>
                     </Item>
                     <Item>
-                        <Link href='#contact'>Contact</Link>
+                        <Link href='#about'>Contact</Link>
                     </Item>
-                    {/* <Item>
-                        <Link
-                            target='#'
-                            href='https://www.linkedin.com/in/cedric-crisolo/'
-                        >
-                            <FontAwesomeIcon icon={faLinkedin} size='1x' />
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link target='#' href='https://github.com/ccrisolo'>
-                            <FontAwesomeIcon icon={faGithub} size='1x' />
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link
-                            target='#'
-                            href='https://www.facebook.com/profile.php?id=100010520404073'
-                        >
-                            <FontAwesomeIcon icon={faFacebook} size='1x' />
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link
-                            target='#'
-                            href='https://twitter.com/CedricCrisolo'
-                        >
-                            <FontAwesomeIcon icon={faTwitter} size='1x' />
-                        </Link>
-                    </Item>
-                    <Item>
-                        <Link target='#' href='mailto: ccrisolo3@gmail.com'>
-                            <FontAwesomeIcon icon={faEnvelope} size='1x' />
-                        </Link>
-                    </Item> */}
                 </Menu>
                 <NavIcon onClick={() => setToggleNav(!toggleNav)}>
                     <Line open={toggleNav} />
@@ -98,7 +64,7 @@ const NavBar = () => {
                         <Link href='#about'>About</Link>
                     </Item>
                     <Item>
-                        <Link href='#contact'>Contact</Link>
+                        <Link href='#about'>Contact</Link>
                     </Item>
 
                     <Item>
