@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar/NavBar";
 import IntroPage from "./Pages/Intro/IntroPage";
 import ProjectsPage from "./Pages/Projects/ProjectsPage";
 import EducationPage from "./Pages/Education/EducationPage";
+import AboutPage from "./Pages/About/AboutPage";
 
 function App() {
     const [isVisible, setIsVisible] = useState(false);
@@ -41,10 +42,10 @@ function App() {
                 <div className='education-section' id='education'>
                     <EducationPage />
                 </div>
-                {/* <div className='about-section' id='about'>
+                <div className='about-section' id='about'>
                     <AboutPage />
                 </div>
-                <div className='contact-section' id='contact'>
+                {/* <div className='contact-section' id='contact'>
                     <ContactPage />
                 </div> */}
             </div>

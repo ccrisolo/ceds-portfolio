@@ -35,6 +35,12 @@
     min-height: 100vh;
 }
 
+.about-section {
+    margin-top: 7%;
+    min-height: 100vh;
+    background-color: rgba(200, 200, 200, 0.15);
+}
+
 h1 {
     color: white;
 }
@@ -87,7 +93,13 @@ p {
         display: grid;
         grid-column: 1/-1;
         grid-template-columns: 0.3fr 2fr 0.3fr;
-        
+    }
+
+    .about-section {
+        display: grid;
+        grid-column: 1/-1;
+        grid-template-columns: 0.3fr 2fr 0.3fr;
+        grid-template-rows: 0.2fr 0.8fr 0.2fr;
     }
 
     #projects {
