@@ -48,14 +48,10 @@ function App() {
                 <div className='education-section' id='education'>
                     <EducationPage />
                 </div>
-                <div className='about-section' id='about'>
+                <div className='about-section'>
                     <AboutPage />
                 </div>
-                {/* <div className='contact-section' id='contact'>
-                    <ContactPage />
-                </div> */}
-
-                <footer className='footer-bar'>
+                <footer className='footer-bar' id='about' >
                     <div className='footer-icon'>
                         <a
                             target='#'

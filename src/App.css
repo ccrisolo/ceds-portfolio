@@ -1,6 +1,7 @@
 .App {
     background-image: url("./background/gradient.jpeg");
     background-size: cover;
+    background-color: #202020;
 }
 
 .nav-bar {
