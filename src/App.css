@@ -41,6 +41,19 @@
     background-color: rgba(200, 200, 200, 0.15);
 }
 
+.footer-bar {
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(55, 55, 55, 0.1);
+}
+
+.footer-icon {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 h1 {
     color: white;
 }
@@ -100,6 +113,9 @@ p {
         grid-column: 1/-1;
         grid-template-columns: 0.3fr 2fr 0.3fr;
         grid-template-rows: 0.2fr 0.8fr 0.2fr;
+    }
+    .footer-bar{
+        grid-column: 1/-1;
     }
 
     #projects {

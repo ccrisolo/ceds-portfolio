@@ -1,6 +1,14 @@
 import React from "react";
 import "./AboutPage.css";
 import ProfilePic from "../../images/ProfilePhoto.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub,
+    faLinkedin,
+    faFacebook,
+    faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faFile } from "@fortawesome/free-regular-svg-icons";
 
 const AboutPage = () => {
     return (
@@ -30,12 +38,13 @@ const AboutPage = () => {
                 </p>
             </div>
             <div className='reach-out'>
-                <h3>
-                    Want to work together? Feel free to reach out! I'm a
+                <h4>
+                    Want to work together? Reach out to me at the links below! I'm a
                     Frontend Software Engineer for Web and Mobile with Full
                     Stack Experience.
-                </h3>
+                </h4>
             </div>
+       
         </>
     );
 };

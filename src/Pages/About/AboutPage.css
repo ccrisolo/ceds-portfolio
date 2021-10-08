@@ -37,6 +37,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 @media (min-width: 1100px) {
     .about-title-container {
         margin-top: 7%;
@@ -65,4 +67,6 @@
         margin-left: 10%;
         margin-right: 10%;
     }
+
+   
 }
