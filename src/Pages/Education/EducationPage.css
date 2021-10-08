@@ -16,24 +16,35 @@
 }
 
 .education-tile {
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 10px;
     margin-left: 5%;
     margin-top: 15px;
     width: 85%;
-    background-color: rgba(196, 184, 215, 0.7);
-    box-shadow: 2px 5px 5px #ababab;
-}
-
-.education-tile.is-visible {
-    animation: split-open 1s;
+    background-color: rgba(195, 190, 202, 0.7);
+    box-shadow: 2px 5px 3px #ababab;
 }
 
 .school-name {
     margin-left: 20px;
+    margin-right: 20px;
     color: white;
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.date-range {
+    border-radius: 5px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #046dff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px #313131;
+    width: 50%;
+    color: white;
 }
 
 .education-body {
@@ -41,13 +52,13 @@
     margin-right: 15px;
 }
 
-@keyframes split-open {
-    0% {
-        transform: scale(0, 0.025);
-    }
-    50% {
-        transform: scale(1, 0.025);
-    }
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.list-item {
+    list-style: none;
 }
 
 /* media queries */
