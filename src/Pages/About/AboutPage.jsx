@@ -25,7 +25,8 @@ const AboutPage = () => {
                     sharpened my awareness to manage teams and deadlines, and
                     honed my ability to work individually as well as in a team.
                     Skilled in Mobile/Web Development, Human Relations,
-                    Management, Behavior, and Health/Fitness.
+                    Management, Behavior, and Health/Fitness, I look forward to
+                    working with you on your next idea!
                 </p>
             </div>
             <div className='reach-out'>
