@@ -20,11 +20,13 @@ function App() {
 
     // fade in transition observer for when elements are visible
     useEffect(() => {
+        const domRef = domRefNode.current;
+
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => setIsVisible(entry.isIntersecting));
         });
-        observer.observe(domRefNode.current);
-        return () => observer.unobserve(domRefNode.current);
+        observer.observe(domRef);
+        return () => observer.unobserve(domRef);
     }, []);
 
     return (
@@ -51,7 +53,7 @@ function App() {
                 <div className='about-section'>
                     <AboutPage />
                 </div>
-                <footer className='footer-bar' id='about' >
+                <footer className='footer-bar' id='about'>
                     <div className='footer-icon'>
                         <a
                             target='#'

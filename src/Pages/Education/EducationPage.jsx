@@ -1,8 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import "./EducationPage.css";
-import LottieAnimation from "../../components/Lottie/LottieAnimation";
-import BackToSchool from "../../animations/BackToSchool.json";
-import FadeInSection from "../../components/FadeIn/FadeInSection";
 import ScaleOutComponent from "../../components/ScaleOut/ScaleOutComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

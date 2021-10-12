@@ -83,7 +83,6 @@ const ProjectsPage = () => {
                                 color: "white",
                             }}
                             target='#'
-                            // href=''
                         >
                             <FontAwesomeIcon icon={faLink} color='white' />
                             <span className='project-link-text'>
@@ -92,11 +91,6 @@ const ProjectsPage = () => {
                         </a>
                     </div>
                 </LateralFadeInSection>
-                {/* <LateralFadeInSection>
-                    <div className='project'>
-                        <h1 className='project-title'>Project 4: Undecided</h1>
-                    </div>
-                </LateralFadeInSection> */}
             </div>
         </>
     );

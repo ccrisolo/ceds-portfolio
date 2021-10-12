@@ -12,7 +12,7 @@ const AboutPage = () => {
                 <img
                     className='profile-pic'
                     src={ProfilePic}
-                    alt='Cedric Profile Photo'
+                    alt='Cedric Profile'
                 />
                 <p className='about-text'>
                     I am a Frontend Software Engineer driven by the opportunity
