@@ -38,7 +38,7 @@ function App() {
                 <div className='intro-section'>
                     <IntroPage />
                 </div>
-                <div
+                {/* <div
                     className={`projects-section ${
                         isVisible ? `is-visible` : ""
                     }`}
@@ -46,7 +46,7 @@ function App() {
                     id='projects'
                 >
                     <ProjectsPage />
-                </div>
+                </div> */}
                 <div className='education-section' id='education'>
                     <EducationPage />
                 </div>
