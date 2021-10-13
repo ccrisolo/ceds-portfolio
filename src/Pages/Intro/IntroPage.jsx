@@ -1,6 +1,7 @@
 import React from "react";
 import LottieAnimation from "../../components/Lottie/LottieAnimation";
 import Typewriter from "typewriter-effect";
+import TypeWriter from "../../components/TypeWriter/Typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faGithub,
@@ -16,7 +17,10 @@ const IntroPage = props => {
     return (
         <>
             <div className='intro'>
-                <div className='typing-container'>
+                {/* <div className='typing-container'> */}
+                    {/* <TypeWriter /> */}
+                {/* </div> */}
+                {/* <div className='typing-container'>
                     <Typewriter
                         options={{
                             loop: false,
@@ -35,17 +39,14 @@ const IntroPage = props => {
                                 .start();
                         }}
                     />
-                </div>
-                <div>
-                    <p>
-                        I'm a passionate Frontend Developer with experience in
-                        both Web and Mobile. A few of my favorite technologies
-                        to use are JavaScript, React, React Native and Redux. I
-                        enjoy learning about software development and thrive
-                        with people who are excited to build and learn from one
-                        another.
-                    </p>
-                </div>
+                </div> */}
+                <p>
+                    I'm a passionate Frontend Developer with experience in both
+                    Web and Mobile. A few of my favorite technologies to use are
+                    JavaScript, React, React Native and Redux. I enjoy learning
+                    about software development and thrive with people who are
+                    excited to build and learn from one another.
+                </p>
                 <div className='social-links-container'>
                     <div
                         className='social-icon'
