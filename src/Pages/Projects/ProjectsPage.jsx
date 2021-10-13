@@ -21,6 +21,8 @@ const ProjectsPage = () => {
                         />
                     </LateralFadeInSection>
                 </div>
+            </FadeInSection>
+            <FadeInSection>
                 <div className='projects-container'>
                     <LateralFadeInSection>
                         <div className='project'>

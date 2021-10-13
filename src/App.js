@@ -13,6 +13,7 @@ import {
     faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import TypeWriter from "./components/TypeWriter/Typewriter";
 
 function App() {
     // const [isVisible, setIsVisible] = useState(false);
@@ -36,6 +37,8 @@ function App() {
                     <NavBar />
                 </div>
                 <div className='intro-section'>
+                    
+                    <TypeWriter />
                     <IntroPage />
                 </div>
                 <div
