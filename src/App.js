@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import NavBar from "./components/NavBar/NavBar";
 import IntroPage from "./Pages/Intro/IntroPage";
 import ProjectsPage from "./Pages/Projects/ProjectsPage";
@@ -16,20 +16,6 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import TypeWriter from "./components/TypeWriter/Typewriter";
 
 function App() {
-    // const [isVisible, setIsVisible] = useState(false);
-    // const domRefNode = useRef();
-
-    // // fade in transition observer for when elements are visible
-    // useEffect(() => {
-    //     const domRef = domRefNode.current;
-
-    //     const observer = new IntersectionObserver(entries => {
-    //         entries.forEach(entry => setIsVisible(entry.isIntersecting));
-    //     });
-    //     observer.observe(domRef);
-    //     return () => observer.unobserve(domRef);
-    // }, []);
-
     return (
         <>
             <div className='App'>
@@ -37,19 +23,10 @@ function App() {
                     <NavBar />
                 </div>
                 <div className='intro-section'>
-                    
                     <TypeWriter />
                     <IntroPage />
                 </div>
-                <div
-                    // className={`projects-section ${
-                    //     isVisible ? `is-visible` : ""
-                    // }`}
-                    // ref={domRefNode}
-                    // id='projects'
-                    className='projects-section'
-                    id='projects'
-                >
+                <div className='projects-section' id='projects'>
                     <ProjectsPage />
                 </div>
                 <div className='education-section' id='education'>

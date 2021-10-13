@@ -1,0 +1,17 @@
+@media (min-width: 900px) {
+    .typing-container {
+        min-height: 125px;
+        min-width: 800px;
+    }
+    .type-wrapper {
+        min-width: 800px;
+    }
+
+    h1{
+        line-height: .950em;
+    }
+
+    .intro {
+        grid-column: 1/2;
+    }
+}

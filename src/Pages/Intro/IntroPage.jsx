@@ -1,7 +1,5 @@
 import React from "react";
 import LottieAnimation from "../../components/Lottie/LottieAnimation";
-import Typewriter from "typewriter-effect";
-import TypeWriter from "../../components/TypeWriter/Typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faGithub,
@@ -17,29 +15,6 @@ const IntroPage = props => {
     return (
         <>
             <div className='intro'>
-                {/* <div className='typing-container'> */}
-                    {/* <TypeWriter /> */}
-                {/* </div> */}
-                {/* <div className='typing-container'>
-                    <Typewriter
-                        options={{
-                            loop: false,
-                            cursor: "",
-                            delay: 40,
-                            cursorClassName: "type-cursor",
-                            wrapperClassName: "type-wrapper",
-                        }}
-                        onInit={typewriter => {
-                            typewriter
-                                .typeString(`<h1>Hi there! I'm Cedric.</h1>`)
-                                .pauseFor(1000)
-                                .typeString(
-                                    `<h1>Let's build something <span style="color: #f53bff;"> GREAT </span> together!</h1>`
-                                )
-                                .start();
-                        }}
-                    />
-                </div> */}
                 <p>
                     I'm a passionate Frontend Developer with experience in both
                     Web and Mobile. A few of my favorite technologies to use are
