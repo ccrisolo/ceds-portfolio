@@ -15,19 +15,19 @@ import {
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
-    const [isVisible, setIsVisible] = useState(false);
-    const domRefNode = useRef();
+    // const [isVisible, setIsVisible] = useState(false);
+    // const domRefNode = useRef();
 
-    // fade in transition observer for when elements are visible
-    useEffect(() => {
-        const domRef = domRefNode.current;
+    // // fade in transition observer for when elements are visible
+    // useEffect(() => {
+    //     const domRef = domRefNode.current;
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => setIsVisible(entry.isIntersecting));
-        });
-        observer.observe(domRef);
-        return () => observer.unobserve(domRef);
-    }, []);
+    //     const observer = new IntersectionObserver(entries => {
+    //         entries.forEach(entry => setIsVisible(entry.isIntersecting));
+    //     });
+    //     observer.observe(domRef);
+    //     return () => observer.unobserve(domRef);
+    // }, []);
 
     return (
         <>
@@ -39,10 +39,12 @@ function App() {
                     <IntroPage />
                 </div>
                 <div
-                    className={`projects-section ${
-                        isVisible ? `is-visible` : ""
-                    }`}
-                    ref={domRefNode}
+                    // className={`projects-section ${
+                    //     isVisible ? `is-visible` : ""
+                    // }`}
+                    // ref={domRefNode}
+                    // id='projects'
+                    className='projects-section'
                     id='projects'
                 >
                     <ProjectsPage />

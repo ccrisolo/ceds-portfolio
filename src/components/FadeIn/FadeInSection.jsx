@@ -6,11 +6,13 @@ const FadeInSection = props => {
     const domRefNode = useRef();
 
     useEffect(() => {
+        const domRef = domRefNode.current;
+
         const observer = new IntersectionObserver(items => {
             items.forEach(item => setIsVisible(item.isIntersecting));
         });
-        observer.observe(domRefNode.current);
-        return () => observer.unobserve(domRefNode.current);
+        observer.observe(domRef);
+        return () => observer.unobserve(domRef);
     }, []);
 
     return (
