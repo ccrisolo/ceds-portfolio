@@ -78,7 +78,7 @@ const IntroPage = props => {
                             color: "white",
                         }}
                         target='#'
-                        href='https://drive.google.com/file/d/1L_Eliko15c5T51dDh0yfdt6KQlv-17hr/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1_Kc5K6VJ2X9yakHeq4EWjnaPkVjdphaZ/view?usp=sharing'
                     >
                         <FontAwesomeIcon icon={faFile} color='white' />
                         <span className='resume-text'>My Resume</span>
