@@ -95,6 +95,30 @@ const ProjectsPage = () => {
                             </a>
                         </div>
                     </LateralFadeInSection>
+                    <LateralFadeInSection>
+                        <div className='project'>
+                            <h1 className='project-title'>Vanilla JS Drums</h1>
+                            <p className='project-body'>
+                                Play drums with your desktop keyboard using this
+                                beat maker made using HTML, CSS and Vanilla
+                                JavaScript
+                            </p>
+                            <a
+                                className='project-link-container'
+                                style={{
+                                    textDecoration: "none",
+                                    color: "white",
+                                }}
+                                target='#'
+                                href='https://ccrisolo.github.io/Vanilla-JS-Drums/'
+                            >
+                                <FontAwesomeIcon icon={faLink} color='white' />
+                                <span className='project-link-text'>
+                                    Click to See
+                                </span>
+                            </a>
+                        </div>
+                    </LateralFadeInSection>
                 </div>
             </FadeInSection>
         </>
