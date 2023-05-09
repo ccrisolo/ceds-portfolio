@@ -63,7 +63,8 @@ const ProjectsPage = () => {
                                     color: "white",
                                 }}
                                 target='#'
-                                href='../../assets/Ecosystem_Mobile_Demo.mp4'
+                                type="video/mp4"
+                                href='https://drive.google.com/file/d/1-4Q5FDJKb3nCPPGE4gsEHw5Ox9CqYCWA/view?usp=share_link'
                             >
                                 <FontAwesomeIcon icon={faVideo} color='white' />
                                 <span className='project-link-text'>
