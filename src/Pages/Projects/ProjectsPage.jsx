@@ -76,9 +76,9 @@ const ProjectsPage = () => {
                         <div className='project'>
                             <h1 className='project-title'>YouTube Clone</h1>
                             <p className='project-body'>
-                                YouTube Clone was created using the MERN stack
-                                and utilizes the YouTube API. Users can search
-                                for videos & add/remove to a favorites list.
+                                YouTube Clone was created using the MERN stack.
+                                Utilizes the YouTube API by fetching popular videos 
+                                in the US and allowing users to search.
                             </p>
                             <a
                                 className='project-link-container'
