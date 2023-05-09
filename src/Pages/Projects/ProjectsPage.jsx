@@ -63,7 +63,8 @@ const ProjectsPage = () => {
                                     color: "white",
                                 }}
                                 target='#'
-                                href='https://drive.google.com/file/d/1JddMP6KRXACQyprr2a4xnyuwAfRwm8Jh/preview'
+                                href='https://drive.google.com/file/d/1fnRIRJV5QrOu4SFinu9qDoB5FS12zGyk/view?usp=share_link'
+                                // href='https://drive.google.com/file/d/1JddMP6KRXACQyprr2a4xnyuwAfRwm8Jh/preview'
                             >
                                 <FontAwesomeIcon icon={faVideo} color='white' />
                                 <span className='project-link-text'>
