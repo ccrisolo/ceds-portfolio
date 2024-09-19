@@ -12,7 +12,7 @@ const ProjectsPage = () => {
         <>
             <FadeInSection>
                 <div className='illustration-2'>
-                    <h2 className='section-title'>Projects</h2>
+                    <h2 className='section-title'>Work Snippets</h2>
                     <LateralFadeInSection>
                         <LottieAnimation
                             lotti={devGearsPurple}
